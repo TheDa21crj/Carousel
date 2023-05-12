@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Carousel</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 5</div>
+        <img src="./img/s1.jpg" style="width: 100%" />
+        <div class="text">Caption Text</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 5</div>
+        <img src="./img/s2.jpg" style="width: 100%" />
+        <div class="text">Caption Two</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 5</div>
+        <img src="./img/s3.jpg" style="width: 100%" />
+        <div class="text">Caption Three</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 5</div>
+        <img src="./img/s4.jpg" style="width: 100%" />
+        <div class="text">Caption Three</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 5</div>
+        <img src="./img/s5.jpg" style="width: 100%" />
+        <div class="text">Caption Three</div>
+      </div>
+
+      <!-- <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a> -->
+
+      <div class="previewParent">
+        <a id="slideForward" onclick="slideForward()">❮</a>
+
+        <div id="previewDivMain">
+          <div class="preview fade" onclick="currentSlide(2)">
+            <img src="./img/s2.jpg" class="previewImg" />
+            <!-- <div class="textPreview">Caption Two</div> -->
+          </div>
+
+          <div class="preview fade" onclick="currentSlide(3)">
+            <img src="./img/s3.jpg" class="previewImg" />
+            <!-- <div class="textPreview">Caption Three</div> -->
+          </div>
+
+          <div class="preview fade" onclick="currentSlide(4)">
+            <img src="./img/s4.jpg" class="previewImg" />
+            <!-- <div class="textPreview">Caption Four</div> -->
+          </div>
+
+          <div class="preview fade" onclick="currentSlide(5)">
+            <img src="./img/s5.jpg" class="previewImg" />
+            <!-- <div class="textPreview">Caption Five</div> -->
+          </div>
+
+          <div class="preview fade" onclick="currentSlide(1)">
+            <img src="./img/s1.jpg" class="previewImg" />
+            <!-- <div class="textPreview">Caption One</div> -->
+          </div>
+        </div>
+        <a id="slideBackward" onclick="slideBackward()">❯</a>
+      </div>
+    </div>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident est
+      beatae voluptas obcaecati consectetur nihil quos praesentium tempora! Modi
+      nemo tenetur ipsum aut incidunt inventore laudantium quos earum itaque
+      ratione?
+    </p>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
